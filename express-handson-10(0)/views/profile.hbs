@@ -1,0 +1,24 @@
+<h1 align="center">Hello {{FirstName}} {{LastName}}</h1>
+<div align="center"><img src="https://assets.logrocket.io/img/logos/javascript_logo.jpg"/></div>
+<h2 align="center">Email: {{Email}}</h2>
+<h3 align="center">Username: {{Username}}</h3>
+<p align="center">write a post</p>
+<form action="null" method="POST" align="center">
+    <div>
+        <br><label for="PostTitle">Title: </label><br>
+        <input type="text" name="PostTitle">
+    </div>
+    <div>
+        <br><label for="PostBody">Description: </label><br>
+        <textarea rows="4" cols="50"> 
+        </textarea>
+    </div>
+    <div>
+       <br><button type="submit">Submit</button><br> 
+    </div>
+</form>
+<a href="http://localhost:3000/users/logout"><p align="center">Logout</p></a>
+
+{{#each posts}}
+<ul>{{Title}}</ul>
+{{/each}}
